@@ -36,6 +36,7 @@ const lineItemTemplates = {
 
 /*<![CDATA[*/
 (function () {
+    console.log("I'm loaded");
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
     if (window.ShopifyBuy) {
         if (window.ShopifyBuy.UI) {
