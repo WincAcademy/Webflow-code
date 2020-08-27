@@ -1,6 +1,7 @@
 /*<![CDATA[*/
 (function () {
     console.log("I'm loaded");
+    console.log(document.getElementById('first-cta'));
     var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
     if (window.ShopifyBuy) {
         if (window.ShopifyBuy.UI) {
