@@ -1,0 +1,24 @@
+<script>
+  let urlParams = new URLSearchParams(window.location.search);
+  let type = urlParams.get("type");
+  let name = urlParams.get("name");
+  if (type !== null && name !== null) {
+    let titleDescription = `${urlParams.get("type")} | ${urlParams.get(
+      "name"
+    )}`;
+    let titleDescriptionNode = document.querySelector(".title-description");
+    titleDescriptionNode.innerText = titleDescription;
+  }
+
+  window.addEventListener("DOMContentLoaded", (event) => {
+    if (type === "Whitepaper") {
+      document.querySelector(".landing-title").innerText =
+        "Bedankt voor het downloaden!";
+      document.querySelector(".will-be-receiving").innerText = "de whitepaper";
+    } else if (name === "Persoonlijkheid") {
+      document.querySelector(".landing-title").innerText =
+        "Bedankt voor het invullen!";
+      document.querySelector(".will-be-receiving").innerText = "de resultaten";
+    }
+  });
+</script>

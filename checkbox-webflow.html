@@ -1,0 +1,17 @@
+<script>
+  let checkbox = document.querySelector("#checkbox");
+
+  checkbox.addEventListener("change", () => {
+    let CTAButton = document.querySelector(".cta-button-new");
+
+    if (checkbox.checked) {
+      CTAButton.style.cursor = "pointer";
+      CTAButton.style.pointerEvents = "auto";
+      CTAButton.style.backgroundColor = "#ffb212";
+    } else {
+      CTAButton.style.cursor = "auto";
+      CTAButton.style.pointerEvents = "none";
+      CTAButton.style.backgroundColor = "#c0c0c0";
+    }
+  });
+</script>
